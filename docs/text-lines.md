@@ -17,7 +17,7 @@
 | await-void | Vines: waiting taunt | Trust your teammates. |
 | void-take | Vines: void taunt | Your team has your back. |
 | untether | Untether cast | Unleash your confidence. |
-| insolence | Insolence cast | Brilliant effort. |
+| insolence | Insolence cast | Original Insolence… cue preserved (replacement disabled by default). |
 | obliteration | Obliteration cast | Determination. |
 | run | Obliteration: running taunt | Keep going. Every step counts. |
 | escape | After obliteration: escape taunt | You can overcome this. |

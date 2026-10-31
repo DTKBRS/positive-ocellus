@@ -49,7 +49,9 @@ public class TextPackTest {
     @Test(expected=IllegalArgumentException.class) public void rejectsDuplicateTriggers() throws Exception {
         TextPack p=defaults();p.lines.get(1).trigger=p.lines.get(0).trigger;p.validate();
     }
-    @Test public void bundledPackHasNineteenEnabledLines() throws Exception {
-        TextPack p=defaults();assertEquals(19,p.lines.size());assertTrue(p.lines.stream().allMatch(l->l.enabled));
+    @Test public void bundledPackPreservesInsolenceCue() throws Exception {
+        TextPack p=defaults();assertEquals(19,p.lines.size());
+        assertNull(p.replacement("Insolence..."));
+        assertEquals(18,p.lines.stream().filter(l->l.enabled).count());
     }
 }

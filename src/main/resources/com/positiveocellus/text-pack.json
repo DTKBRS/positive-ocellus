@@ -111,7 +111,7 @@
       "trigger": "insolence",
       "exactMatch": false,
       "positive": "Brilliant effort.",
-      "enabled": true
+      "enabled": false
     },
     {
       "key": "obliteration",
