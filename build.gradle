@@ -1,0 +1,25 @@
+plugins { id 'java' }
+group = 'com.positiveocellus'
+version = '0.1.0'
+repositories {
+    maven { url = 'https://repo.runelite.net'; content { includeGroupByRegex('net\\.runelite.*') } }
+    mavenCentral()
+}
+def runeLiteVersion = '1.13.4'
+dependencies {
+    compileOnly "net.runelite:client:${runeLiteVersion}"
+    testImplementation "net.runelite:client:${runeLiteVersion}"
+    testImplementation 'junit:junit:4.13.2'
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release.set(11) }
+tasks.register('run', JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.positiveocellus.PositiveOcellusLauncher'
+    args '--developer-mode', '--debug'
+    jvmArgs '-ea'
+}
+tasks.register('renderPreview', JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.positiveocellus.PanelPreview'
+    jvmArgs '-Djava.awt.headless=true'
+}
