@@ -18,8 +18,3 @@ tasks.register('run', JavaExec) {
     args '--developer-mode', '--debug'
     jvmArgs '-ea'
 }
-tasks.register('renderPreview', JavaExec) {
-    classpath = sourceSets.test.runtimeClasspath
-    mainClass = 'com.positiveocellus.PanelPreview'
-    jvmArgs '-Djava.awt.headless=true'
-}
