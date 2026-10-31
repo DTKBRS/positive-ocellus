@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "lines": [
+    {
+      "key": "ascension",
+      "original": "Fight begins",
+      "positive": "Now, let us rise together.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "ascension.wav",
+      "enabled": true
+    },
+    {
+      "key": "unworthy",
+      "original": "Corner slam: worth taunt",
+      "positive": "You are worthy.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "unworthy.wav",
+      "enabled": true
+    },
+    {
+      "key": "pointless",
+      "original": "Corner slam: effort taunt",
+      "positive": "Your effort matters.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "pointless.wav",
+      "enabled": true
+    },
+    {
+      "key": "fail",
+      "original": "Corner slam: failure taunt",
+      "positive": "You are getting stronger.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "fail.wav",
+      "enabled": true
+    },
+    {
+      "key": "annihilation",
+      "original": "Charged central attack",
+      "positive": "Embrace your potential.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "annihilation.wav",
+      "enabled": true
+    },
+    {
+      "key": "death",
+      "original": "Uncharged central attack",
+      "positive": "Great things await.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "death.wav",
+      "enabled": true
+    },
+    {
+      "key": "disappear",
+      "original": "Phase two begins",
+      "positive": "You belong here.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "disappear.wav",
+      "enabled": true
+    },
+    {
+      "key": "time",
+      "original": "Portals summoned",
+      "positive": "Your moment is here.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "time.wav",
+      "enabled": true
+    },
+    {
+      "key": "enough",
+      "original": "Phase three begins",
+      "positive": "You have come so far.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "enough.wav",
+      "enabled": true
+    },
+    {
+      "key": "panic",
+      "original": "Vines: panic taunt",
+      "positive": "Breathe. You can do this.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "panic.wav",
+      "enabled": true
+    },
+    {
+      "key": "await-void",
+      "original": "Vines: waiting taunt",
+      "positive": "Trust your teammates.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "await-void.wav",
+      "enabled": true
+    },
+    {
+      "key": "void-take",
+      "original": "Vines: void taunt",
+      "positive": "Your team has your back.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "void-take.wav",
+      "enabled": true
+    },
+    {
+      "key": "untether",
+      "original": "Untether cast",
+      "positive": "Unleash your confidence.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "untether.wav",
+      "enabled": true
+    },
+    {
+      "key": "insolence",
+      "original": "Insolence cast",
+      "positive": "Brilliant effort.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "insolence.wav",
+      "enabled": true
+    },
+    {
+      "key": "obliteration",
+      "original": "Obliteration cast",
+      "positive": "Determination.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "obliteration.wav",
+      "enabled": true
+    },
+    {
+      "key": "run",
+      "original": "Obliteration: running taunt",
+      "positive": "Keep going. Every step counts.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "run.wav",
+      "enabled": true
+    },
+    {
+      "key": "escape",
+      "original": "After obliteration: escape taunt",
+      "positive": "You can overcome this.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "escape.wav",
+      "enabled": true
+    },
+    {
+      "key": "everything-ends",
+      "original": "After obliteration: ending taunt",
+      "positive": "Every attempt is progress.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "everything-ends.wav",
+      "enabled": true
+    },
+    {
+      "key": "end",
+      "original": "Enrage begins",
+      "positive": "Finish strong.",
+      "soundId": -1,
+      "channel": "sound",
+      "wav": "end.wav",
+      "enabled": true
+    }
+  ]
+}
