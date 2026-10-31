@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "lines": [
+    {
+      "key": "ascension",
+      "cue": "Fight begins",
+      "trigger": "ascension",
+      "exactMatch": false,
+      "positive": "Now, let us rise together.",
+      "enabled": true
+    },
+    {
+      "key": "unworthy",
+      "cue": "Corner slam: worth taunt",
+      "trigger": "unworthy",
+      "exactMatch": false,
+      "positive": "You are worthy.",
+      "enabled": true
+    },
+    {
+      "key": "pointless",
+      "cue": "Corner slam: effort taunt",
+      "trigger": "pointless",
+      "exactMatch": false,
+      "positive": "Your effort matters.",
+      "enabled": true
+    },
+    {
+      "key": "fail",
+      "cue": "Corner slam: failure taunt",
+      "trigger": "fail",
+      "exactMatch": false,
+      "positive": "You are getting stronger.",
+      "enabled": true
+    },
+    {
+      "key": "annihilation",
+      "cue": "Charged central attack",
+      "trigger": "annihilation",
+      "exactMatch": false,
+      "positive": "Embrace your potential.",
+      "enabled": true
+    },
+    {
+      "key": "death",
+      "cue": "Uncharged central attack",
+      "trigger": "death",
+      "exactMatch": false,
+      "positive": "Great things await.",
+      "enabled": true
+    },
+    {
+      "key": "disappear",
+      "cue": "Phase two begins",
+      "trigger": "disappear",
+      "exactMatch": false,
+      "positive": "You belong here.",
+      "enabled": true
+    },
+    {
+      "key": "time",
+      "cue": "Portals summoned",
+      "trigger": "your time",
+      "exactMatch": false,
+      "positive": "Your moment is here.",
+      "enabled": true
+    },
+    {
+      "key": "enough",
+      "cue": "Phase three begins",
+      "trigger": "enough",
+      "exactMatch": false,
+      "positive": "You have come so far.",
+      "enabled": true
+    },
+    {
+      "key": "panic",
+      "cue": "Vines: panic taunt",
+      "trigger": "panic",
+      "exactMatch": false,
+      "positive": "Breathe. You can do this.",
+      "enabled": true
+    },
+    {
+      "key": "await-void",
+      "cue": "Vines: waiting taunt",
+      "trigger": "await",
+      "exactMatch": false,
+      "positive": "Trust your teammates.",
+      "enabled": true
+    },
+    {
+      "key": "void-take",
+      "cue": "Vines: void taunt",
+      "trigger": "will take",
+      "exactMatch": false,
+      "positive": "Your team has your back.",
+      "enabled": true
+    },
+    {
+      "key": "untether",
+      "cue": "Untether cast",
+      "trigger": "untether",
+      "exactMatch": false,
+      "positive": "Unleash your confidence.",
+      "enabled": true
+    },
+    {
+      "key": "insolence",
+      "cue": "Insolence cast",
+      "trigger": "insolence",
+      "exactMatch": false,
+      "positive": "Brilliant effort.",
+      "enabled": true
+    },
+    {
+      "key": "obliteration",
+      "cue": "Obliteration cast",
+      "trigger": "obliteration",
+      "exactMatch": false,
+      "positive": "Determination.",
+      "enabled": true
+    },
+    {
+      "key": "run",
+      "cue": "Obliteration: running taunt",
+      "trigger": "run",
+      "exactMatch": false,
+      "positive": "Keep going. Every step counts.",
+      "enabled": true
+    },
+    {
+      "key": "escape",
+      "cue": "After obliteration: escape taunt",
+      "trigger": "escape",
+      "exactMatch": false,
+      "positive": "You can overcome this.",
+      "enabled": true
+    },
+    {
+      "key": "everything-ends",
+      "cue": "After obliteration: ending taunt",
+      "trigger": "everything",
+      "exactMatch": false,
+      "positive": "Every attempt is progress.",
+      "enabled": true
+    },
+    {
+      "key": "end",
+      "cue": "Enrage begins",
+      "trigger": "end",
+      "exactMatch": true,
+      "positive": "Finish strong.",
+      "enabled": true
+    }
+  ]
+}
