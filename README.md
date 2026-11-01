@@ -8,7 +8,7 @@ A RuneLite plugin that changes **the text above Ocellus's head** in The Fracture
 
 - Worth taunt → **You are worthy.**
 - Failure taunt → **You are getting stronger.**
-- Enrage callout → **Finish strong.**
+- Enrage callout → **Let's finish strong!**
 
 **Development version — not yet on the Plugin Hub.** Matching and event behavior are tested; a live encounter check is still needed before submission.
 

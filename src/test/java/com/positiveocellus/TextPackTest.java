@@ -18,14 +18,14 @@ public class TextPackTest {
         assertEquals("You are getting stronger.",defaults().replacement("You... fail..."));
     }
     @Test public void matchesMultiWordTriggerAcrossPunctuation() throws Exception {
-        assertEquals("Your moment is here.",defaults().replacement("Your time... comes..."));
+        assertEquals("This is your moment!",defaults().replacement("Your time... comes..."));
     }
     @Test public void doesNotMatchInsideAnotherWord() throws Exception {
         assertNull(defaults().replacement("Running laps"));
         assertNull(defaults().replacement("Weekend"));
     }
     @Test public void endCueMustBeTheWholeLine() throws Exception {
-        assertEquals("Finish strong.",defaults().replacement("End..."));
+        assertEquals("Let's finish strong!",defaults().replacement("End..."));
         assertEquals("You can overcome this.",defaults().replacement("You can't... escape... the end..."));
         assertNull(defaults().replacement("A different end"));
     }

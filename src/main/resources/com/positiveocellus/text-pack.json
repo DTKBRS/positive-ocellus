@@ -22,7 +22,7 @@
       "cue": "Corner slam: effort taunt",
       "trigger": "pointless",
       "exactMatch": false,
-      "positive": "Your effort matters.",
+      "positive": "Your hard work is paying off!",
       "enabled": true
     },
     {
@@ -62,7 +62,7 @@
       "cue": "Portals summoned",
       "trigger": "your time",
       "exactMatch": false,
-      "positive": "Your moment is here.",
+      "positive": "This is your moment!",
       "enabled": true
     },
     {
@@ -70,7 +70,7 @@
       "cue": "Phase three begins",
       "trigger": "enough",
       "exactMatch": false,
-      "positive": "You have come so far.",
+      "positive": "You've come so far!",
       "enabled": true
     },
     {
@@ -94,7 +94,7 @@
       "cue": "Vines: void taunt",
       "trigger": "will take",
       "exactMatch": false,
-      "positive": "Your team has your back.",
+      "positive": "Your team has your back!",
       "enabled": true
     },
     {
@@ -118,7 +118,7 @@
       "cue": "Obliteration cast",
       "trigger": "obliteration",
       "exactMatch": false,
-      "positive": "Determination.",
+      "positive": "You're breaking new ground!",
       "enabled": true
     },
     {
@@ -150,7 +150,7 @@
       "cue": "Enrage begins",
       "trigger": "end",
       "exactMatch": true,
-      "positive": "Finish strong.",
+      "positive": "Let's finish strong!",
       "enabled": true
     }
   ]

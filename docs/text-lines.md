@@ -6,20 +6,20 @@
 |---|---|---|
 | ascension | Fight begins | Now, let us rise together. |
 | unworthy | Corner slam: worth taunt | You are worthy. |
-| pointless | Corner slam: effort taunt | Your effort matters. |
+| pointless | Corner slam: effort taunt | Your hard work is paying off! |
 | fail | Corner slam: failure taunt | You are getting stronger. |
 | annihilation | Charged central attack | Embrace your potential. |
 | death | Uncharged central attack | Great things await. |
 | disappear | Phase two begins | You belong here. |
-| time | Portals summoned | Your moment is here. |
-| enough | Phase three begins | You have come so far. |
+| time | Portals summoned | This is your moment! |
+| enough | Phase three begins | You've come so far! |
 | panic | Vines: panic taunt | Breathe. You can do this. |
 | await-void | Vines: waiting taunt | Trust your teammates. |
-| void-take | Vines: void taunt | Your team has your back. |
+| void-take | Vines: void taunt | Your team has your back! |
 | untether | Untether cast | Unleash your confidence. |
 | insolence | Insolence cast | Original Insolence… cue preserved (replacement disabled by default). |
-| obliteration | Obliteration cast | Determination. |
+| obliteration | Obliteration cast | You're breaking new ground! |
 | run | Obliteration: running taunt | Keep going. Every step counts. |
 | escape | After obliteration: escape taunt | You can overcome this. |
 | everything-ends | After obliteration: ending taunt | Every attempt is progress. |
-| end | Enrage begins | Finish strong. |
+| end | Enrage begins | Let's finish strong! |
