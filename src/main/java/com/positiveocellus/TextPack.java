@@ -3,7 +3,6 @@ package com.positiveocellus;
 import com.google.gson.Gson;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
 import java.text.Normalizer;
 import java.util.*;
 
@@ -45,22 +44,13 @@ public final class TextPack {
         }
     }
 
-    public static TextPack read(Path file, Gson gson) throws IOException {
-        if (Files.size(file) > 1024 * 1024) throw new IOException("Text pack exceeds 1 MB");
-        try (Reader r = Files.newBufferedReader(file, StandardCharsets.UTF_8)) {
-            TextPack p = gson.fromJson(r, TextPack.class);
-            if (p == null) throw new IOException("Empty text pack");
-            p.validate(); return p;
+    public static TextPack bundled(Gson gson) throws IOException {
+        try (InputStream in = TextPack.class.getResourceAsStream("/com/positiveocellus/text-pack.json")) {
+            if (in == null) throw new IOException("Missing bundled dialogue");
+            TextPack pack = gson.fromJson(new InputStreamReader(in, StandardCharsets.UTF_8), TextPack.class);
+            pack.validate();
+            return pack;
         }
     }
 
-    public void save(Path file, Gson gson) throws IOException {
-        validate(); Files.createDirectories(file.getParent());
-        Path tmp = Files.createTempFile(file.getParent(), "text-", ".json");
-        try {
-            Files.write(tmp, gson.toJson(this).getBytes(StandardCharsets.UTF_8));
-            try { Files.move(tmp, file, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.ATOMIC_MOVE); }
-            catch (AtomicMoveNotSupportedException e) { Files.move(tmp, file, StandardCopyOption.REPLACE_EXISTING); }
-        } finally { Files.deleteIfExists(tmp); }
-    }
 }

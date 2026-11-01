@@ -1,17 +1,12 @@
 package com.positiveocellus;
 
 import com.google.gson.Gson;
-import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TextPackTest {
     static TextPack defaults() throws Exception {
-        try(Reader r=new InputStreamReader(TextPackTest.class.getResourceAsStream("/com/positiveocellus/text-pack.json"),StandardCharsets.UTF_8)) {
-            TextPack p=new Gson().fromJson(r,TextPack.class);p.validate();return p;
-        }
+        return TextPack.bundled(new Gson());
     }
     @Test public void normalizesCaseMarkupAndEllipses() throws Exception {
         assertEquals("You are worthy.",defaults().replacement("<col=ff0000>UNWORTHY…</col>"));
@@ -34,11 +29,6 @@ public class TextPackTest {
     }
     @Test public void unknownAndNullTextRemainUntouched() throws Exception {
         assertNull(defaults().replacement("A brand new callout"));assertNull(defaults().replacement(null));
-    }
-    @Test public void roundTripPreservesCustomText() throws Exception {
-        Path d=Files.createTempDirectory("ocellus-text-test"), f=d.resolve("text-pack.json");
-        try {TextPack p=defaults();p.lines.get(1).positive="Nice work!";p.save(f,new Gson());assertEquals("Nice work!",TextPack.read(f,new Gson()).replacement("Unworthy..."));}
-        finally {Files.deleteIfExists(f);Files.delete(d);}
     }
     @Test(expected=IllegalArgumentException.class) public void rejectsEmptyTriggers() throws Exception {
         TextPack p=defaults();p.lines.get(0).trigger="...";p.validate();

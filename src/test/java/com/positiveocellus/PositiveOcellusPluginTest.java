@@ -10,6 +10,23 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PositiveOcellusPluginTest {
+    @Test public void enablingAppliesBundledDialogueAndDisablingStopsIt() throws Exception {
+        PositiveOcellusPlugin p=new PositiveOcellusPlugin();
+        AtomicReference<String> written=new AtomicReference<>();
+        Actor npc=actor(NPC.class,"Ocellus",written,null);
+        p.startUp();
+        p.onOverheadTextChanged(new OverheadTextChanged(npc,"Unworthy..."));
+        assertEquals("You are worthy.",written.get());
+        written.set(null);
+        p.onOverheadTextChanged(new OverheadTextChanged(npc,"Insolence..."));
+        assertNull(written.get());
+        p.shutDown();
+        p.onOverheadTextChanged(new OverheadTextChanged(npc,"Unworthy..."));
+        assertNull(written.get());
+        p.startUp();
+        p.onOverheadTextChanged(new OverheadTextChanged(npc,"Unworthy..."));
+        assertEquals("You are worthy.",written.get());
+    }
     private PositiveOcellusPlugin plugin() throws Exception {
         PositiveOcellusPlugin p=new PositiveOcellusPlugin();
         Field f=PositiveOcellusPlugin.class.getDeclaredField("active");f.setAccessible(true);f.set(p,TextPackTest.defaults());return p;
