@@ -1,5 +1,6 @@
 package com.positiveocellus;
 
+import com.google.gson.Gson;
 import java.lang.reflect.*;
 import java.util.concurrent.atomic.AtomicReference;
 import net.runelite.api.Actor;
@@ -12,6 +13,8 @@ import static org.junit.Assert.*;
 public class PositiveOcellusPluginTest {
     @Test public void enablingAppliesBundledDialogueAndDisablingStopsIt() throws Exception {
         PositiveOcellusPlugin p=new PositiveOcellusPlugin();
+        Field gson=PositiveOcellusPlugin.class.getDeclaredField("gson");
+        gson.setAccessible(true);gson.set(p,new Gson());
         AtomicReference<String> written=new AtomicReference<>();
         Actor npc=actor(NPC.class,"Ocellus",written,null);
         p.startUp();
