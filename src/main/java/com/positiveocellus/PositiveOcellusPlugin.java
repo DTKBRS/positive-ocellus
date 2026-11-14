@@ -1,6 +1,7 @@
 package com.positiveocellus;
 
 import com.google.gson.Gson;
+import javax.inject.Inject;
 import net.runelite.api.NPC;
 import net.runelite.api.events.OverheadTextChanged;
 import net.runelite.client.eventbus.Subscribe;
@@ -9,11 +10,12 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @PluginDescriptor(name="Positive Ocellus", description="Replace Ocellus's overhead dialogue with encouraging text", tags={"tfa", "ocellus", "dialogue", "text"})
 public class PositiveOcellusPlugin extends Plugin {
+    @Inject private Gson gson;
     private volatile TextPack active;
     private boolean replacing;
 
     @Override protected void startUp() throws Exception {
-        active = TextPack.bundled(new Gson());
+        active = TextPack.bundled(gson);
     }
 
     @Override protected void shutDown() {
